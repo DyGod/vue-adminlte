@@ -1,6 +1,6 @@
 # vue-adminlte
 
-> A full-featured Webpack + extend layout + vue-loader setup with hot reload, linting, testing & css extraction
+> Vue template with AdminLTE bootstrap Frame work
 
 ## Build Setup
 
