@@ -24,17 +24,10 @@
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree"> 
-        <template v-for="m in menu">
-          <template v-if="typeof m == 'string'">
-            <li class="header"> {{ m }}</li>
-          </template>
-          <template v-else>
-            
-          </template>
-
-        </template>
-      </ul>
+      
+    <ul class="sidebar-menu" data-widget="tree"> 
+        <sidebar-menu v-for="m in admin_lte.menu" :menu="m"></sidebar-menu>
+    </ul>
     </section>
     <!-- /.sidebar -->
   </aside>
@@ -42,7 +35,12 @@
 
 <script>
   /* eslint-disable */
+
+  import sidebarMenu from '@/components/sidebar-menu.vue'
   export default {
-    name: 'sidebar'
+    name: 'sidebar',
+    components:{
+      'sidebar-menu': sidebarMenu
+    }
   }
 </script>

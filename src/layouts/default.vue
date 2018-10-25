@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <dashboardHeader />
+    <dashboard-header />
     <sidebar />
     <div class="content-wrapper">
     <router-view />
@@ -16,7 +16,7 @@
   export default {
     name: 'default',
     components: {
-      'dashboardHeader': dashboardHeader,
+      'dashboard-header': dashboardHeader,
       'sidebar': Sidebar
     }
   }

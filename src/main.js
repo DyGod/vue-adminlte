@@ -15,16 +15,36 @@ Vue.use(VueExtendLayout)
 Vue.mixin({
   data(){
     return{
-      logoMini: '<b>Ez</b>Pz',
-      logoLG: '<b>Eazy</b>Payroll',
-      menu: [
-        'Main Nav',
-        {
-          'text' : 'Dashboard',
-          'url' : '/',
-          'icon' : 'dashbaord'
-        }
-      ]
+      admin_lte : {
+        logoMini: '<b>Ez</b>Pz',
+        logoLG: '<b>Eazy</b>Payroll',
+        menu: [
+          'Main Nav',
+          {
+            'text' : 'Dashboard',
+            'url' : '/',
+            'icon' : 'dashboard'
+          },
+          {
+            'text' : 'Profile',
+            
+            'icon' : 'user',
+            'submenu' : [
+              {
+                'text' : 'Edit Profile',
+                'url' : '/',
+                'icon' : 'edit'
+              },
+              {
+                'text' : 'View Profile',
+                'url' : '/',
+                'icon' : 'eye'
+              }
+            
+            ]
+          }
+        ]
+      }
 
     }
   },
